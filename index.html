@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>أكاديمية الرواد الكندية الدولية بمغاغة | Rowad Canadian International Academy (CIA)</title>
+<meta name="description" content="أكاديمية الرواد الكندية الدولية للتدريب المهني بمغاغة - المركز المعتمد لاختبارات الرخصة الدولية ICDL في مغاغة.">
+<meta name="theme-color" content="#0B2545">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+<div class="topbar">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <span class="pill"><i class="fa-solid fa-certificate"></i> المركز المعتمد الوحيد بمغاغة</span>
+      <span class="hide-sm">مركز اختبارات وتدريب الرخصة الدولية ICDL الرسمي</span>
+    </div>
+    <div style="display:flex;gap:18px;align-items:center;font-weight:700">
+      <a href="https://www.facebook.com/Alroad9.Academy" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" style="color:#60A5FA"></i> فيسبوك</a>
+      <a href="https://wa.me/2010 02983212" target="_blank" rel="noopener noreferrer" style="color:#6EE7B7" dir="ltr"><i class="fa-brands fa-whatsapp"></i> 010 1234 5678</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <a href="#about" class="brand">
+     <img src="images/logo.png" alt="أكاديمية الرواد">
+      <div>
+        <span class="brand-name">أكاديمية الرواد</span>
+        <span class="brand-sub">Rowad Canadian International Academy</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="#about" class="active">الرئيسية</a>
+      <a href="#accreditation">الاعتماد الدولي</a>
+      <a href="#programs">البرامج</a>
+      <a href="#why-us">مميزاتنا</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="header-cta">
+      <button class="btn btn-primary" onclick="openEnroll()" style="padding:11px 20px;font-size:14px">التسجيل السريع</button>
+      <button class="menu-btn" onclick="toggleDrawer()" aria-label="القائمة"><i class="fa-solid fa-bars" id="menuIcon"></i></button>
+    </div>
+  </div>
+  <div class="drawer" id="drawer">
+    <a href="#about" onclick="toggleDrawer()">الرئيسية</a>
+    <a href="#accreditation" onclick="toggleDrawer()">اختبارات ICDL المعتمدة</a>
+    <a href="#programs" onclick="toggleDrawer()">البرامج الأساسية</a>
+    <a href="#why-us" onclick="toggleDrawer()">لماذا الرواد؟</a>
+    <a href="#contact" onclick="toggleDrawer()">التواصل والمقر</a>
+    <button class="btn btn-primary" onclick="toggleDrawer();openEnroll()">التسجيل في دورة تدريبية</button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="about">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow intro" style="--d:.05s">أكاديمية الرواد الكندية للتدريب المهني والتطوير</span>
+      <h1 class="intro" style="--d:.15s">أكاديمية الرواد بمغاغة<br><span class="hl">منصة التدريب المهني والاعتماد الدولي</span></h1>
+      <p class="intro" style="--d:.3s">نجمع بين الرصانة الأكاديمية والتطبيق العملي المباشر. نؤهل شباب وطلاب مغاغة ومراكز محافظة المنيا بالمهارات والشهادات المعتمدة للالتحاق بسوق العمل بثقة.</p>
+      <div class="hero-actions intro" style="--d:.45s">
+        <button class="btn btn-accent" onclick="openEnroll()">تصفح الدورات والتسجيل <i class="fa-solid fa-arrow-left"></i></button>
+        <a href="#programs" class="btn btn-outline">استكشف البرامج</a>
+      </div>
+      <div class="checks intro" style="--d:.6s">
+        <span><i class="fa-solid fa-circle-check"></i> تدريب عملي 100%</span>
+        <span><i class="fa-solid fa-circle-check"></i> شهادات موثقة</span>
+        <span><i class="fa-solid fa-circle-check"></i> مدربون معتمدون</span>
+      </div>
+    </div>
+
+    <div class="hero-visual intro" style="--d:.25s">
+      <div class="hero-img big"><img src="images/hero-main.jpg" alt="طلاب يتدربون على الحاسب الآلي"></div>
+      <div class="hero-img small"><img src="images/hero-small.jpg" alt="تدريب عملي في المعمل"></div>
+      <div class="float-card fc1"><span class="ic"><i class="fa-solid fa-award"></i></span><div>ICDL معتمد<small>امتحانات أسبوعية</small></div></div>
+      <div class="float-card fc2"><span class="ic"><i class="fa-solid fa-users"></i></span><div>دفعات متجددة<small>التسجيل مفتوح</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FACTS -->
+<div class="facts">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="fact reveal"><b><span data-count="100">0</span>%</b><span>تدريب تطبيقي عملي</span></div>
+      <div class="fact reveal" style="--d:.1s"><b>#1</b><span>مركز ICDL معتمد بمغاغة</span></div>
+      <div class="fact reveal" style="--d:.2s"><b><span data-count="4">0</span></b><span>ركائز تدريبية متخصصة</span></div>
+      <div class="fact reveal" style="--d:.3s"><b>مغاغة</b><span>محافظة المنيا</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ACCREDITATION -->
+<section class="section" id="accreditation">
+  <div class="container accred">
+    <div class="accred-img reveal">
+      <img src="images/accreditation.jpg" alt="معمل الحاسب الآلي بأكاديمية الرواد">
+      <div class="seal">
+        <div class="ic"><i class="fa-solid fa-award"></i></div>
+        <div><b>مركز اختبارات ICDL معتمد</b><small>Rowad Canadian International Academy</small></div>
+      </div>
+    </div>
+    <div class="reveal" style="--d:.1s">
+      <span class="notice"><i class="fa-solid fa-shield-halved"></i> تنبيه هام للطلاب والخريجين بمغاغة</span>
+      <h2 class="h2">المركز الوحيد المعتمد لاختبارات ICDL الدولية بمدينة مغاغة</h2>
+      <p class="lead">أكاديمية الرواد هي الجهة المجهزة والمؤهلة رسمياً لعقد الامتحانات المعتمدة واستخراج شهادات الرخصة الدولية لقيادة الحاسب الآلي الموثقة داخل مركز مغاغة.</p>
+      <ul class="check-list">
+        <li><i class="fa-solid fa-check"></i>معامل حاسب آلي حديثة ومجهزة بالكامل</li>
+        <li><i class="fa-solid fa-check"></i>امتحانات رسمية أسبوعية بنظام إلكتروني مباشر</li>
+        <li><i class="fa-solid fa-check"></i>شهادات موثقة ورقم استعلام لكل طالب</li>
+        <li><i class="fa-solid fa-check"></i>دورات تأهيلية واختبارات تجريبية قبل الامتحان</li>
+      </ul>
+      <div class="actions">
+        <button class="btn btn-primary" onclick="openEnroll('icdl')">حجز اختبار أو دورة ICDL</button>
+        <button class="link-btn" onclick="openModal('accredModal')"><i class="fa-solid fa-circle-info"></i> تفاصيل التوثيق</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="section section-soft" id="programs">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">التخصصات والبرامج</span>
+      <h2 class="h2">الركائز التدريبية الأربعة</h2>
+      <p class="lead">مناهج متخصصة تحت إشراف نخبة من المحاضرين لإكسابك المهارة الفعلية المطلوبة بسوق العمل.</p>
+    </div>
+
+    <div class="programs">
+      <article class="prog reveal">
+        <div class="prog-img"><img src="images/survey.jpg" alt="اللغة الإنجليزية"><span class="prog-icon"><i class="fa-solid fa-language"></i></span></div>
+        <div class="prog-body">
+          <h3>اللغة الإنجليزية</h3>
+          <p>المحادثة والاستماع والاستخدام المهني للغة الإنجليزية للمقابلات وبيئة العمل.</p>
+          <ul><li>مستويات تأسيس متدرجة (A1 to C1)</li><li>دورة المحادثة المكثفة (Speaking)</li><li>إعداد المقابلات واللغة الأكاديمية</li></ul>
+          <button class="btn btn-outline btn-block" onclick="openEnroll('english')">التسجيل بالبرنامج</button>
+        </div>
+      </article>
+
+      <article class="prog reveal" style="--d:.1s">
+        <div class="prog-img"><img src="images/tech.jpg" alt="البرمجة وتكنولوجيا المعلومات"><span class="prog-icon"><i class="fa-solid fa-laptop-code"></i></span></div>
+        <div class="prog-body">
+          <h3>البرمجة وتكنولوجيا المعلومات</h3>
+          <p>البرمجة والعلوم الرقمية وصيانة وتأمين الحاسب لمواكبة التحول الرقمي.</p>
+          <ul><li>أساسيات البرمجة وتطوير المواقع</li><li>دورات ICDL وتطبيقات المكتب</li><li>صيانة الحاسب والشبكات الأساسية</li></ul>
+          <button class="btn btn-outline btn-block" onclick="openEnroll('tech')">التسجيل بالبرنامج</button>
+        </div>
+      </article>
+
+      <article class="prog reveal" style="--d:.2s">
+        <div class="prog-img"><img src="images/medical.jpg" alt="التمريض والتحاليل الطبية"><span class="prog-icon"><i class="fa-solid fa-user-nurse"></i></span></div>
+        <div class="prog-body">
+          <h3>التمريض والتحاليل الطبية</h3>
+          <p>تأهيل إكلينيكي وعملي لمساعدي التمريض وفنيي معامل التحاليل الطبية.</p>
+          <ul><li>الإسعافات الأولية وتدريبات الطوارئ</li><li>سحب العينات وحقن المحاليل</li><li>التعامل مع الفحوصات والأجهزة الطبية</li></ul>
+          <button class="btn btn-outline btn-block" onclick="openEnroll('medical')">التسجيل بالبرنامج</button>
+        </div>
+      </article>
+
+      <article class="prog reveal" style="--d:.3s">
+        <div class="prog-img"><img src="images/survey.jpg" alt="المساحة والخرائط"><span class="prog-icon"><i class="fa-solid fa-compass-drafting"></i></span></div>
+        <div class="prog-body">
+          <h3>المساحة والخرائط</h3>
+          <p>تدريب ميداني على أجهزة المساحة الحديثة ورسم الخرائط الهندسية.</p>
+          <ul><li>العمل الميداني بأجهزة Total Station</li><li>الرسم المساحي ببرامج AutoCAD</li><li>تطبيقات نظم المعلومات الجغرافية GIS</li></ul>
+          <button class="btn btn-outline btn-block" onclick="openEnroll('surveying')">التسجيل بالبرنامج</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section" id="why-us">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">معايير الجودة والتفوق</span>
+      <h2 class="h2">لماذا نعد الخيار الأول في مغاغة؟</h2>
+    </div>
+    <div class="features">
+      <div class="feature reveal">
+        <div class="ic"><i class="fa-solid fa-flask-vial"></i></div>
+        <h3>تدريب عملي تطبيقي 100%</h3>
+        <p>ممارسة فعلية داخل معامل الحاسب ومختبرات التمريض والمواقع المساحية لضمان إتقان المهارة.</p>
+      </div>
+      <div class="feature reveal" style="--d:.1s">
+        <div class="ic"><i class="fa-solid fa-stamp"></i></div>
+        <h3>مركز اختبارات وتدريب معتمد</h3>
+        <p>الاعتماد الحصري لامتحانات ICDL بمغاغة، مع شهادات موثقة تدعم سيرتك الذاتية.</p>
+      </div>
+      <div class="feature reveal" style="--d:.2s">
+        <div class="ic"><i class="fa-solid fa-chalkboard-user"></i></div>
+        <h3>نخبة من المحاضرين والمتخصصين</h3>
+        <p>مدربون معتمدون أصحاب خبرة ميدانية يقدمون الشرح بأسلوب مبسط ومحترف.</p>
+      </div>
+    </div>
+
+    <div class="cta reveal" style="margin-top:64px">
+      <div>
+        <h3>جاهز تبدأ رحلتك المهنية؟</h3>
+        <p>سجّل الآن وسنتواصل معك لتحديد الدورة المناسبة لك.</p>
+      </div>
+      <button class="btn btn-accent" onclick="openEnroll()">ابدأ التسجيل الآن</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-soft" id="contact">
+  <div class="container contact">
+    <div class="reveal">
+      <span class="eyebrow">التواصل والمقر الرسمي</span>
+      <h2 class="h2">تفضل بزيارتنا في مقر الأكاديمية</h2>
+      <p class="lead">نرحب باستفساراتكم وزيارتكم اليومية للتسجيل والاستعلام عن الدورات المتاحة.</p>
+
+      <div class="info-list">
+        <div class="info">
+          <div class="ic"><i class="fa-solid fa-location-dot"></i></div>
+          <div><b>عنوان الأكاديمية</b><span>مغاغة - شارع الكنيسة بجوار كافيةالأبيض</span></div>
+          <button class="copy-btn" onclick="copyText('مغاغة شارع الكنيسة بجوار كافية الأبيض','تم نسخ العنوان')" title="نسخ"><i class="fa-regular fa-copy"></i></button>
+        </div>
+        <div class="info">
+          <div class="ic"><i class="fa-solid fa-clock"></i></div>
+          <div><b>مواعيد العمل</b><span>يومياً من 9:00 صباحاً حتى 9:00 مساءً (عدا الجمعة)</span></div>
+        </div>
+        <div class="info">
+          <div class="ic"><i class="fa-solid fa-phone"></i></div>
+          <div><b>أرقام الاستعلام السريع</b><span dir="ltr">+20 10 02983212 / 01119751518</span></div>
+          <button class="copy-btn" onclick="copyText('+20 10 02983212','تم نسخ رقم الهاتف')" title="نسخ"><i class="fa-regular fa-copy"></i></button>
+        </div>
+      </div>
+
+      <div class="contact-btns">
+        <a class="btn btn-wa" href="https://wa.me/201012345678" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> واتساب مباشر</a>
+        <a class="btn btn-primary" href="tel:01012345678"><i class="fa-solid fa-phone"></i> اتصال هاتفي</a>
+      </div>
+
+      <div class="fb-card">
+        <div><b>تابعنا على فيسبوك</b><span>أحدث مواعيد الاختبارات والإعلانات الرسمية</span></div>
+        <a class="btn" href="https://www.facebook.com/Alroad9.Academy" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> الصفحة الرسمية</a>
+      </div>
+    </div>
+
+    <div class="form-box reveal" style="--d:.15s">
+      <h3>نموذج التسجيل والاستفسار</h3>
+      <p>أدخل بياناتك وسيتم تحويل طلبك فوراً إلى واتساب قسم القبول.</p>
+      <form id="mainForm" onsubmit="submitForm(event,false)">
+        <div class="grid-2">
+          <div class="field"><label for="fName">الاسم بالكامل <em>*</em></label><input class="input" id="fName" required placeholder="أدخل اسمك الثلاثي"></div>
+          <div class="field"><label for="fPhone">رقم الهاتف / الواتساب <em>*</em></label><input class="input" id="fPhone" type="tel" required placeholder="010XXXXXXXX" dir="ltr" style="text-align:right"></div>
+        </div>
+        <div class="field">
+          <label for="fProgram">البرنامج المطلوب <em>*</em></label>
+          <select class="input" id="fProgram" required>
+            <option value="" disabled selected>اختر الدورة أو الاعتماد المطلوب...</option>
+            <option>اختبارات ودورة الرخصة الدولية ICDL</option>
+            <option>برنامج اللغة الإنجليزية (المحادثة والتأسيس)</option>
+            <option>البرمجة وتكنولوجيا المعلومات</option>
+            <option>التمريض والتحاليل الطبية</option>
+            <option>المساحة والخرائط الهندسية</option>
+            <option>استفسارات عامة</option>
+          </select>
+        </div>
+        <div class="field"><label for="fNotes">ملاحظاتك</label><textarea class="input" id="fNotes" rows="3" placeholder="أي أسئلة أو ملاحظات إضافية..."></textarea></div>
+        <button class="btn btn-wa btn-block" type="submit"><i class="fa-brands fa-whatsapp"></i> إرسال طلب التسجيل عبر واتساب</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#about" class="brand">
+          <img src="images/logo.png" alt="أكاديمية الرواد">
+          <div><span class="brand-name">أكاديمية الرواد الكندية</span><span class="brand-sub">بمغاغة - المنيا</span></div>
+        </a>
+        <p style="margin-top:16px;max-width:360px">المركز المعتمد الحصري لاختبارات ICDL بمغاغة، ومنصة التدريب المهني والتطوير.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/Alroad9.Academy" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/20 10 02983212" target="_blank" rel="noopener noreferrer" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>روابط سريعة</h4>
+        <ul><li><a href="#about">الرئيسية</a></li><li><a href="#accreditation">اعتماد ICDL</a></li><li><a href="#programs">البرامج</a></li><li><a href="#contact">التواصل والمقر</a></li></ul>
+      </div>
+      <div>
+        <h4>البرامج</h4>
+        <ul><li><a href="#programs">اللغة الإنجليزية</a></li><li><a href="#programs">البرمجة وتكنولوجيا المعلومات</a></li><li><a href="#programs">التمريض والتحاليل الطبية</a></li><li><a href="#programs">المساحة والخرائط</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> أكاديمية الرواد الكندية الدولية بمغاغة. جميع الحقوق محفوظة.</span>
+      <span>المركز المعتمد الحصري لاختبارات ICDL بمغاغة</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ENROLL MODAL -->
+<div class="modal" id="enrollModal" onclick="if(event.target===this)closeModal('enrollModal')">
+  <div class="modal-box">
+    <button class="modal-x" onclick="closeModal('enrollModal')" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-head">
+      <img src="images/logo.png" alt="أكاديمية الرواد">
+      <div><small>أكاديمية الرواد بمغاغة</small><h3>التسجيل السريع بالدورة</h3></div>
+    </div>
+    <form id="modalForm" onsubmit="submitForm(event,true)">
+      <div class="field"><label for="mName">الاسم الكامل <em>*</em></label><input class="input" id="mName" required placeholder="أدخل الاسم الثلاثي"></div>
+      <div class="field"><label for="mPhone">رقم الواتساب / الهاتف <em>*</em></label><input class="input" id="mPhone" type="tel" required placeholder="010XXXXXXXX" dir="ltr" style="text-align:right"></div>
+      <div class="field">
+        <label for="mProgram">البرنامج المطلوب</label>
+        <select class="input" id="mProgram">
+          <option>اختبارات ودورة ICDL الدولية</option>
+          <option>اللغة الإنجليزية والمحادثة</option>
+          <option>البرمجة وتكنولوجيا المعلومات</option>
+          <option>التمريض والتحاليل الطبية</option>
+          <option>المساحة والخرائط</option>
+        </select>
+      </div>
+      <button class="btn btn-wa btn-block" type="submit"><i class="fa-brands fa-whatsapp"></i> إرسال الطلب عبر واتساب</button>
+    </form>
+  </div>
+</div>
+
+<!-- ACCREDITATION MODAL -->
+<div class="modal" id="accredModal" onclick="if(event.target===this)closeModal('accredModal')">
+  <div class="modal-box">
+    <button class="modal-x" onclick="closeModal('accredModal')" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-head">
+      <img src="images/logo.png" alt="أكاديمية الرواد">
+      <div><h3>اعتماد اختبارات ICDL بمغاغة</h3><small>Rowad Canadian International Academy</small></div>
+    </div>
+    <p>تتمتع أكاديمية الرواد (CIA) بالترخيص الرسمي لعقد جلسات الامتحانات المعتمدة إلكترونياً لشهادة ICDL.</p>
+    <ul>
+      <li>امتحانات مباشرة أسبوعية بالنظام الدولي الرسمي</li>
+      <li>إمكانية الاستعلام عن كود الطالب أونلاين</li>
+      <li>دعم وتأهيل كامل من فريق المعمل قبل الامتحان</li>
+    </ul>
+    <div class="modal-foot">
+      <a class="link-btn" href="https://www.facebook.com/Alroad9.Academy" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> متابعة الإعلانات</a>
+      <button class="btn btn-primary" style="padding:10px 18px;font-size:14px" onclick="closeModal('accredModal');openEnroll('icdl')">حجز اختبار ICDL</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><span id="toastMsg"></span></div>
+
+<div class="float-social">
+  <a href="https://www.facebook.com/Alroad9.Academy" target="_blank" rel="noopener noreferrer" style="background:#1877F2" title="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://wa.me/20 10 02983212" target="_blank" rel="noopener noreferrer" style="background:#25D366" title="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
